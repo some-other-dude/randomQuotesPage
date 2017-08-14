@@ -1,22 +1,70 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
 
+/*  color pallet
+Dark Jungle Green RGBA(30, 34, 33, 1.00)
+Sunglow RGBA(250, 203, 49, 1.00)
+Buttercup RGBA(217, 156, 50, 1.00)
+Givery RGBA(250, 227, 194, 1.00)
+Makara RGBA(139, 125, 106, 1.00)
+*/
 
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url("http://bking39116-webdev.s3.amazonaws.com/randomQuotes/dan-carlson-141263.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
 
+.quotebox {
+    background-color: RGBA(30, 34, 33, 1.00);
+    height: 15em;
+    padding: 25px;
+    radius: 10;
+}
 
+.quote-text {
+    color: RGBA(250, 227, 194, 1.00);
+    font-size: 2em;
 
+}
+.quote-text:before, .quote-text:after {
+        content: '"';
+}
 
+.quote-source {
+    color: RGBA(250, 203, 49, 1.00);
+    font-size: 1.6em;
+    font-style: italic;
+    text-align: right;
+    padding-right: 40px;
+}
 
+.quote-source:before {
+    content: '-';
+}
 
+.credits {
+    background: RGBA(30, 34, 33, .8);
+    border-color: RGBA(30, 34, 33, .8);
+    color: RGBA(134, 125, 106, 1.00);
+}
 
+.credits p {
+    padding: 0px;
+    margin: 0px;
+}
 
-
-
-
-
-
+.credits a:link a:visited a:hover a:active {
+    color:RGBA(134, 125, 106, 1.00);
+    padding: 0px;
+    margin: 0px;
+}
