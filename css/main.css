@@ -2,10 +2,12 @@
    Author's custom styles
    ========================================================================== */
 /*  color pallette
+Bright Road Stripe Black Haze       RGBA(246, 248, 250, 1.00)
 Road Stripe Desert Storm            RGBA(240, 230, 224, 1.00);
 Oily Pavement Cod Grey              RGBA(43, 48, 51, 1.00);
 Dark Yellow Stripe Hairy Heath      RGBA(100, 55, 32, 1.00);
 Light pavement Viridian Green       RGBA(75, 91, 91, 1.00);
+
 */
 
 #beacon {
@@ -34,15 +36,15 @@ body {
 }
 
 .quotebox {
-    /*background-color: RGBA(30, 34, 33, 1.00);*/
-    background-color: RGBA(240, 230, 224, 1.00);
-    height: 15em;
-    padding: 25px;
-    radius: 10;
+    background-color: RGBA(246, 248, 250, 1.00);
+    padding-top: 10px;
+    padding-left: 20px;
+    border-radius: 3px;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 5px 5px 5px 5px RGBA(43, 48, 51, 1.00);
 }
 
 .quote-text {
-    /*color: RGBA(250, 227, 194, 1.00);*/
     color: RGBA(43, 48, 51, 1.00);
     font-size: 2em;
 }
