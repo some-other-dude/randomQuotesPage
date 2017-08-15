@@ -11,10 +11,13 @@ Givery RGBA(250, 227, 194, 1.00)
 Makara RGBA(139, 125, 106, 1.00)
 */
 
+/*.wait-to-load {
+    opacity: 0;
+}*/
+
 body {
     padding-top: 50px;
-    padding-bottom: 20px;
-    background-image: url("http://bking39116-webdev.s3.amazonaws.com/randomQuotes/dan-carlson-141263.jpg");
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAbACgDASEAAhEBAxEB/8QAGgAAAwEAAwAAAAAAAAAAAAAAAAQFAwEGB//EACkQAAICAQIEBAcAAAAAAAAAAAECAxEABBIFITFhE0FSkQYUMlFxgrH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMABP/EABwRAQEBAQEAAwEAAAAAAAAAAAEAEQIhAzFBcf/aAAwDAQACEQMRAD8A8hRt7jd5ALjmmYwIoeij9Vq7GR7PMKnL7tVjXSM3jxq0e5jsjB3dqvJ3EmM0u/rfIt9675L4x3Wp2mYUtyFUkDmHwzqzfu51y4jegSe+Nq5MQX0jAkRmYJAgVjJRUigRdc8x1WoEykhQtNZA6XiHPuzL5ki30N+cMqU2a+VjW1dl/XnjsGi07o1yuvLrWKiHswi4TKaXhbuIz460OZWSr9wcS4pp9LpZzFCspWlZXZwdwIvyGHEJd3qn2NjKKAOGYi2u4lhjSEhOp98br8hx+/yq8H0cGpnImTcL9RH8yl8UcL0Wk4axggCmNk2ncSRd31PbAruWwzbpJJUcsME1/9k=');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -34,7 +37,6 @@ body {
 .quote-text {
     color: RGBA(250, 227, 194, 1.00);
     font-size: 2em;
-
 }
 .quote-text:before, .quote-text:after {
         content: '"';
