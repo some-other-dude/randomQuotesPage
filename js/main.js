@@ -1,13 +1,3 @@
-var imgUrl = 'http://bking39116-webdev.s3.amazonaws.com/randomQuotes/img/dan-carlson-141263-bg.jpg';
-
-{ // page background loading
-$('img#beacon').load( function(){
-  console.log('loaded');
-}).attr('src', imgUrl);
-
-$('body').css('background-image', 'url(' + imgUrl + ')');
-}
-
 
 { // begin quote fetch scope
 
@@ -37,7 +27,7 @@ $('body').css('background-image', 'url(' + imgUrl + ')');
 
     doANewQuote();
 
-    $( "#get-another-quote-button" ).click(function() {
+    $( "#new-quote-button" ).click(function() {
           doANewQuote();
     });
 

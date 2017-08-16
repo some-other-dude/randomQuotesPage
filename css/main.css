@@ -1,80 +1,64 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/*  color pallette
-Bright Road Stripe Black Haze       RGBA(246, 248, 250, 1.00)
-Road Stripe Desert Storm            RGBA(240, 230, 224, 1.00);
-Oily Pavement Cod Grey              RGBA(43, 48, 51, 1.00);
-Dark Yellow Stripe Hairy Heath      RGBA(100, 55, 32, 1.00);
-Light pavement Viridian Green       RGBA(75, 91, 91, 1.00);
 
-*/
-
-#beacon {
-    visibility: hidden;
-    width: 0px;
-    height: 0px;
-}
 
 html {
     height: 100%;
+
 }
 
 body {
-    height: 100%;
-    padding-top: 50px;
-    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAbACgDASEAAhEBAxEB/8QAGgAAAwEAAwAAAAAAAAAAAAAAAAQFAwEGB//EACkQAAICAQIEBAcAAAAAAAAAAAECAxEABBIFITFhE0FSkQYUMlFxgrH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMABP/EABwRAQEBAQEAAwEAAAAAAAAAAAEAEQIhAzFBcf/aAAwDAQACEQMRAD8A8hRt7jd5ALjmmYwIoeij9Vq7GR7PMKnL7tVjXSM3jxq0e5jsjB3dqvJ3EmM0u/rfIt9675L4x3Wp2mYUtyFUkDmHwzqzfu51y4jegSe+Nq5MQX0jAkRmYJAgVjJRUigRdc8x1WoEykhQtNZA6XiHPuzL5ki30N+cMqU2a+VjW1dl/XnjsGi07o1yuvLrWKiHswi4TKaXhbuIz460OZWSr9wcS4pp9LpZzFCspWlZXZwdwIvyGHEJd3qn2NjKKAOGYi2u4lhjSEhOp98br8hx+/yq8H0cGpnImTcL9RH8yl8UcL0Wk4axggCmNk2ncSRd31PbAruWwzbpJJUcsME1/9k=');
-    background-position: center bottom;
-    background-repeat: no-repeat;
+    background-color: green;
 
 }
- #main-content {
-     min-height: 500px;
- }
+
+.row-centered {
+    text-align:center;
+}
+
 .col-centered {
-    float: none;
-    margin: 0 auto;
+    display:inline-block;
+    float:none;
+    text-align:left;
+    margin-right:-4px;
 }
 
-.quotebox {
-    background-color: RGBA(246, 248, 250, 1.00);
-    padding-top: 10px;
-    padding-left: 20px;
-    border-radius: 3px;
-    /* offset-x | offset-y | blur-radius | spread-radius | color */
-    box-shadow: 5px 5px 5px 5px RGBA(43, 48, 51, 1.00);
+.quote-box {
+    margin-top: 150px;
+    min-height: 100px;
+    background-color: white;
 }
 
-.quote-text {
-    color: RGBA(43, 48, 51, 1.00);
-    font-size: 30px;
+.quote-content {
+    color: black;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 36px;
 }
 
-.quote-source {
-    color: RGBA(100, 55, 32, 1.00);
-    font-size: 24px;
-    font-style: italic;
+.quote-title {
+    color: black;
     text-align: right;
-    padding-right: 40px;
-}
-.quote-box-buttons {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 28px;
 }
 
 .credits {
-    background: RGBA(43, 48, 51, .8);;
-    border: none;
-    color: RGBA(75, 91, 91, 1.00);
+    color: black;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 18px;
 }
 
-.credits p {
-    padding: 0px;
-    margin: 0px;
+#tweet {
+
 }
 
-.credits a:link a:visited a:hover a:active {
-    color:RGBA(134, 125, 106, 1.00);
-    padding: 0px;
-    margin: 0px;
+#tumblr {
+
+}
+
+#new-quote {
+
 }
