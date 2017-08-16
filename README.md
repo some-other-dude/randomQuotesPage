@@ -20,3 +20,5 @@ See [this](https://www.freecodecamp.org/challenges/build-a-random-quote-machine)
 1. Quotes source [Quotesondesign.com](https://quotesondesign.com/api-v4-0/)
 1. Edited in Atom, debugged in Chrome
 1. Github repo: [https://github.com/some-other-dude/randomQuotesPage]
+
+I initially built a version (incomplete) with a large background image.  After thinking it through, I was putting a lot of fluff in that did not add value to the exercise.  I branched this version into withBackgroundPicture and started from scratch to see how fast I could build the page per the spec. The new branch is withFadingColors.
