@@ -27,7 +27,6 @@
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <!-- <div class="wait-to-load"> -->
 
         <div class="container">
 
@@ -35,16 +34,14 @@
         <!-- Box for the random quote -->
                 <div class="row">
                     <div class="quotebox col-sm-8 col-centered">
-                        <p class="quote-text">
-                            Now is the time for all good men to come to the aid of their country.
-                        </p>
-                        <p class="quote-source">
-                            Every Typist Ever
-                        </p>
+                        <div class="quote-text" id="quote-content"><p>%QUOTE CONTENT%</p></div>
+                        <div class="quote-source" id="quote-title"><p>%QUOTE TITLE%</p></div>
+                        <span class="btn btn-default quote-box-buttons" id="get-another-quote-button">Get Another Quote</span>
                     </div>
                 </div>
             </div>
-<img id="beacon" src="http://bking39116-webdev.s3.amazonaws.com/randomQuotes/img/dan-carlson-141263-bg.jpg"/>
+
+
             <nav class="navbar navbar-default navbar-fixed-bottom credits">
               <div class="text-center">
                   <p>&copy; SomeOtherDude 2017. Some rights possibly reserved.</p>
@@ -52,7 +49,7 @@
               </div>
             </nav>
 
-        <!-- </div> <!-- wait-to-load -->
+<img id="beacon" src="http://bking39116-webdev.s3.amazonaws.com/randomQuotes/img/dan-carlson-141263-bg.jpg"/>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>

@@ -64,6 +64,11 @@ body {
     content: '-';
 }
 
+.quote-box-buttons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .credits {
     background: RGBA(43, 48, 51, .8);;
     border: none;
