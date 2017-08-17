@@ -38,6 +38,7 @@ body {
     text-align: center;
     font-family: sans-serif;
     font-size: 30px;
+    /* TODO: add space between favicon and quote text */
 }
 
 #quote-title {
