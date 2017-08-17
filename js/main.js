@@ -41,6 +41,8 @@
     function updateQuoteInDOM(q) {
         $("#quote-title").text('- ' + q["title"]);
         $("#quote-content").html(q["content"]);
+        // make twitter link
+        $("#tweet").attr("href", "https://twitter.com/intent/tweet?text=" + encodeURIComponent($("#quote-content").text().trim() + " " + $("#quote-title").text().trim()));
     }
 
     // download a new quote and call the helper functions to update the DOM
