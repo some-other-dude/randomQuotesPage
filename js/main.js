@@ -43,6 +43,7 @@
         $("#quote-content").html(q["content"]);
         // make twitter link
         $("#tweet").attr("href", "https://twitter.com/intent/tweet?text=" + encodeURIComponent($("#quote-content").text().trim() + " " + $("#quote-title").text().trim()));
+        $("#tumblr").attr("href", "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp,SomeOtherDude&caption=" + encodeURIComponent($("#quote-content").text().trim()) + "&content=" + encodeURIComponent($("#quote-title").text().slice(2).trim()) + '&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button');
     }
 
     // download a new quote and call the helper functions to update the DOM
