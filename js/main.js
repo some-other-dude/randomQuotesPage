@@ -15,15 +15,17 @@
 
     // Color shift on quote change
     function generateColor() {
-        var color = ["#001F3F","#0074D9","#7FDBFF","#39CCCC","#3D9970","#2ECC40","#01FF70","#FFDC00","#FF851B","#FF4136","#F012BE","#B10DC9","#85144B","#FFFFFF","#AAAAAA","#DDDDDD","#111111"];
-        myColor = color[Math.random().floor() * 15];
-        console.log(myColor); // TODO: remove all the refs to myColor and return color[Math.rand...]
-        return myColor
+        var color = ["#001F3F","#0074D9","#7FDBFF","#39CCCC","#3D9970","#2ECC40","#01FF70","#FFDC00","#FF851B","#FF4136","#F012BE","#B10DC9","#85144B","#F1F1F1","#AAAAAA","#DDDDDD","#111111"];
+        return color[(Math.floor(Math.random() * 15))];
     }
 
     function changeColor() {
-        return;
+        var c = generateColor();
+        $("body").animate({backgroundColor: c}, 1500);
+        $("#quote-title").animate({color: c}, 500);
+        $("#quote-content").animate({color: c}, 500);
     }
+
     // get rid of garbage characters and assemble the html payload for the quote
     function cleanUpQuote(q) {
         var div = document.createElement("div");
