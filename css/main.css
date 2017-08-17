@@ -24,7 +24,7 @@ body {
 }
 
 .quote-box {
-    margin-top: 150px;
+    margin-top: 50px;
     min-height: 100px;
     padding: 20px 20px 20px 30px;
     background-color: white;
@@ -51,25 +51,21 @@ body {
 }
 
 .credits {
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .credits p {
     color: white;
     font-family: sans-serif;
-    font-size: 8px;
+    font-size: 9px;
     margin: 2px;
     padding: 0px;
 }
 
-#tweet {
-
+.btn-social {
+    color: white;
 }
 
-#tumblr {
-
-}
-
-#new-quote {
-
+.btn-social:hover, .btn-social:active, .btn-social:focus {
+    color: white;
 }

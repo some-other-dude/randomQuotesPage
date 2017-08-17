@@ -15,7 +15,7 @@
 
     // Color shift on quote change
     function generateColor() {
-        var color = ["#001F3F","#0074D9","#7FDBFF","#39CCCC","#3D9970","#2ECC40","#01FF70","#FFDC00","#FF851B","#FF4136","#F012BE","#B10DC9","#85144B","#F1F1F1","#AAAAAA","#DDDDDD","#111111"];
+        var color = ["#001F3F","#0074D9","#7FDBFF","#39CCCC","#3D9970","#2ECC40","#01FF70","#FFDC00","#FF851B","#FF4136","#F012BE","#B10DC9","#85144B","#A1B2C3","#AAAAAA","#DDDDDD","#111111"];
         return color[(Math.floor(Math.random() * 15))];
     }
 
@@ -24,13 +24,14 @@
         $("body").animate({backgroundColor: c}, 1500);
         $("#quote-title").animate({color: c}, 500);
         $("#quote-content").animate({color: c}, 500);
+        $(".btn-social").animate({backgroundColor: c}, 500);
     }
 
     // get rid of garbage characters and assemble the html payload for the quote
     function cleanUpQuote(q) {
         var div = document.createElement("div");
         div.innerHTML = q["content"];
-        q["content"] = '<span class="fa fa-quote-left"></span>' + (div.textContent || div.innerText || "").trim();
+        q["content"] = '<span class="fa fa-quote-left"></span> ' + (div.textContent || div.innerText || "").trim();
         div.innerHTML = q["title"];
         q["title"] = (div.textContent || div.innerText || "").trim();
         return q;
@@ -38,7 +39,7 @@
 
     // update the quote box with the new quote
     function updateQuoteInDOM(q) {
-        $("#quote-title").text('-' + q["title"]);
+        $("#quote-title").text('- ' + q["title"]);
         $("#quote-content").html(q["content"]);
     }
 
@@ -63,8 +64,7 @@
 
     // load the first quote
     $(function () {
-        getANewQuote();
-        showQuote();
+        doANewQuote();
     });
 
     // New Quote Button event handler
